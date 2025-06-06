@@ -35,22 +35,23 @@
 </head>
 
 <body class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-text-white tw-bg-[#000]">
-    <header class="tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-px-[10%] max-md:tw-mr-auto md:tw-justify-around"
+    <header
+        class="tw-fixed tw-top-0 tw-left-0 tw-z-50 tw-bg-black tw-flex tw-h-[60px] tw-w-full tw-px-[10%] max-md:tw-mr-auto md:tw-justify-around"
         data-aos="fade-down" data-aos-duration="700">
 
-
-
-        <div
+        <a href="#"
             class="tw-h-[50px] tw-w-[150px] tw-p-[4px] tw-text-primary tw-text-2xl tw-font-semibold tw-place-content-center">
             Restoran
-        </div>
+        </a>
+
+
         <div class="collapsible-header animated-collapse" id="collapsed-items">
             <div
                 class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white max-md:tw-mt-[30px] max-md:tw-flex-col max-md:tw-place-items-end max-md:tw-gap-5 md:tw-mx-auto md:tw-place-items-center">
-                <a class="header-links" href=""> About us </a>
-                <a class="header-links" href=""> Menus </a>
-                <a class="header-links" href=""> Contact us </a>
-                <a class="header-links" href="" target="_blank" rel="noreferrer">
+                <a class="header-links" href="#"> Home </a>
+                <a class="header-links" href="#discount"> Discount </a>
+                <a class="header-links" href="#menu"> Menu </a>
+                <a class="header-links" href="#order">
                     Order online
                 </a>
             </div>
@@ -60,34 +61,33 @@
                     class="header-links tw-transition-colors tw-duration-[0.3s]">
                     <i class="bi bi-facebook"></i>
                 </a>
-
                 <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" area-label="twitter"
                     class="header-links tw-transition-colors tw-duration-[0.3s]">
                     <i class="bi bi-instagram"></i>
                 </a>
+
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" area-label="twitter"
+                    class="header-links tw-transition-colors tw-duration-[0.3s]">
+                    <p class="te">Login</p>
+                    <i class="bi bi-box-arrow-left"></i>
+                </a>
             </div>
         </div>
+
         <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white md:tw-hidden"
             onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
-            <!-- <i class="bi bi-list"></i> -->
         </button>
     </header>
-
     <section
-        class="tw-relative tw-flex  tw-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-h-[100dvh]"
-        id="hero-section">
+        class="tw-relative tw-pt-[60px] tw-flex tw-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-h-[100dvh]">
 
         <div class="tw-flex max-lg:tw-flex-col tw-gap-2 tw-p-2 tw-w-full tw-h-full">
             <div
-                class="tw-flex tw-w-full lg:tw-max-w-[50vw] tw-h-full tw-flex-col
-                             tw-place-content-center tw-place-items-center 
-                            tw-gap-4 tw-p-2 tw-text-white">
+                class="tw-flex tw-w-full lg:tw-max-w-[50vw] tw-h-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-4 tw-p-2 tw-text-white">
                 <div class="tw-flex tw-flex-col tw-w-fit max-lg:tw-place-items-center tw-gap-4">
                     <h1 class="tw-text-7xl max-lg:tw-leading-relaxed tw-font-semibold max-md:tw-text-center max-md:tw-text-5xl"
                         data-aos="zoom-in" data-aos-duration="700">
-                        Eat Healthy with
-                        <br>
-                        Nutrio Restaurant
+                        Eat Healthy with<br>Nutrio Restaurant
                     </h1>
                     <p class="tw-max-w-[400px] max-lg:tw-text-center" data-aos="zoom-in" data-aos-duration="700">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta error eveniet, fugit numquam
@@ -95,9 +95,7 @@
                     </p>
                     <a href="https://" target="_blank" rel="noreferrer noopener" data-aos="fade-up"
                         data-aos-duration="700"
-                        class="tw-flex tw-rounded-sm tw-bg-secondary tw-text-medium tw-p-3 
-                                    tw-px-[20px] tw-w-fit tw-text-white tw-transition-colors tw-duration-[0.3s] 
-                                    hover:tw-bg-primary hover:tw-text-black">
+                        class="tw-flex tw-rounded-sm tw-bg-secondary tw-text-medium tw-p-3 tw-px-[20px] tw-w-fit tw-text-white tw-transition-colors tw-duration-[0.3s] hover:tw-bg-primary hover:tw-text-black">
                         Order online
                     </a>
                 </div>
@@ -111,12 +109,10 @@
                 </div>
             </div>
         </div>
-
-
-
     </section>
 
-    <section
+
+    <section id="discount"
         class="tw-flex tw-min-h-[80vh] tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%]  tw-p-4 tw-px-[20%] max-md:tw-flex-col max-md:tw-gap-[4%] max-md:tw-px-[5%]">
         <div class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] max-md:tw-h-[300px] max-md:tw-w-[300px]"
             data-aos="fade-right" data-aos-duration="700">
@@ -129,7 +125,8 @@
                 off every wednesday
             </h2>
             <div class="tw-mt-6 tw-max-w-[350px] tw-text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime quis placeat assumenda, eligendi
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam maxime quis placeat assumenda,
+                eligendi
                 incidunt?
             </div>
             <a href="https://maps.app.goo.gl/"
@@ -141,7 +138,7 @@
         <div></div>
     </section>
 
-    <section
+    <section id="menu"
         class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center  tw-p-[5%] max-md:tw-px-[5%]">
         <h2 class="tw-text-xl tw-italic" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
             data-aos-offset="0">
@@ -292,7 +289,7 @@
     </section>
 
 
-    <section
+    <section id="order"
         class="tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-overflow-hidden tw-bg-[#28282859] tw-p-4 tw-px-[10%] max-md:tw-flex-col"
         id="reservation">
         <div data-aos="zoom-in" data-aos-duration="700"
@@ -303,7 +300,7 @@
             <div class="tw-flex tw-flex-col tw-gap-2">
                 <h2 class="primary-text-color tw-text-3xl tw-font-medium max-md:tw-text-xl" data-aos="fade-left"
                     data-aos-duration="100">
-                    Reservation
+                    Reservasi
                 </h2>
                 <h3 class="tw-text-5xl max-md:tw-text-3xl" data-aos="fade-left" data-aos-duration="200">
                     Book your table
@@ -350,10 +347,11 @@
                 </button>
             </form>
             <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center">
-                <h3 class="tw-text-xl" data-aos="fade-left" data-aos-duration="900">To book call</h3>
+                <h3 class="tw-text-xl" data-aos="fade-left" data-aos-duration="900">Hubungi Kontak</h3>
 
                 <div class="primary-text-color tw-text-3xl" data-aos="fade-left" data-aos-duration="1000">
-                    +123 232 123
+                    <i class="bi bi-whatsapp"></i>
+                    +62 896 7712 0912
                 </div>
             </div>
         </div>
@@ -361,7 +359,7 @@
 
     <section class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[5%]">
         <h3 class="tw-text-primary tw-text-4xl tw-font-medium max-md:tw-text-2xl">
-            What some of our diners say
+            Beberapa Ulasan
         </h3>
 
         <div class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]">
@@ -426,9 +424,11 @@
         </div>
 
         <div class="tw-mt-[5%] tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-5">
-            <h2 class="primary-text-color tw-text-3xl">On the map</h2>
-            <iframe src="https://www.google.com/maps/embed?" class="tw-h-[350px] tw-w-[600px] max-md:tw-w-full"
-                style="border: 0" allowfullscreen="" loading="lazy"
+            <h2 class="primary-text-color tw-text-3xl">Lokasi</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.986386601579!2d107.55822736221329!3d-6.9787775096397135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68ef99c63d1ea7%3A0xdea1568a3a05d4c4!2sMasjid%20Al%20Barokah!5e0!3m2!1sid!2sid!4v1749199925730!5m2!1sid!2sid"
+                style="border:0;" class="tw-h-[450px] tw-w-full max-md:tw-w-full"allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
