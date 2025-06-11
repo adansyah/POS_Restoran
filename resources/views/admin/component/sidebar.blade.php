@@ -4,13 +4,13 @@
         <!-- Sidebar navigation-->
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
-                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html" aria-expanded="false"><i
+                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="admins" aria-expanded="false"><i
                             data-feather="home" class="feather-icon"></i><span class="hide-menu">Dashboard</span></a>
                 </li>
                 <li class="list-divider"></li>
                 <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
 
-                <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html" aria-expanded="false"><i
+                <li class="sidebar-item"> <a class="sidebar-link" href="kategori" aria-expanded="false"><i
                             data-feather="archive" class="feather-icon"></i><span class="hide-menu">Kategori
                         </span></a>
                 </li>
