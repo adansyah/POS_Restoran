@@ -12,7 +12,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.page_application.menu');
     }
 
     /**
